@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="styleomega.cb006647.styleomega">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="styleomega.cb006647.styleomega.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="styleomega.cb006647.styleomega.RegisterActivity" />
+        <activity android:name="styleomega.cb006647.styleomega.DashboardActivity" />
+        <activity
+            android:name="styleomega.cb006647.styleomega.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="styleomega.cb006647.styleomega.ProductClothing" />
+        <activity android:name=".WomensClothing" />
+        <activity android:name="styleomega.cb006647.styleomega.CartActivity" />
+        <activity android:name="styleomega.cb006647.styleomega.CheckoutActivity" />
+        <activity android:name="styleomega.cb006647.styleomega.ContactQuestion" />
+        <activity android:name="styleomega.cb006647.styleomega.SearchActivity"></activity>
+    </application>
+
+</manifest>

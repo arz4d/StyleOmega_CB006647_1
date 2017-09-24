@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/productImageList"
+        android:layout_width="146dp"
+        android:layout_height="127dp"
+        app:srcCompat="@drawable/acc_bag"
+        android:layout_alignBottom="@+id/txtQty"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="9dp" />
+
+
+    <TextView
+        android:id="@+id/idTxtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/productImageList"
+        android:layout_alignEnd="@+id/addToCart" />
+
+    <TextView
+        android:id="@+id/picTxtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idTxtList"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:id="@+id/nameTxtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:layout_above="@+id/priceTxtList"
+        android:layout_alignStart="@+id/priceTxtList" />
+
+    <TextView
+        android:id="@+id/sizeTxtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:layout_below="@+id/priceTxtList"
+        android:layout_alignStart="@+id/priceTxtList" />
+
+    <TextView
+        android:id="@+id/priceTxtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:layout_marginEnd="33dp"
+        android:layout_below="@+id/picTxtList"
+        android:layout_alignParentEnd="true" />
+
+
+    <EditText
+        android:id="@+id/txtQty"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Enter a Quantity  :"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/priceTxtList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="9dp"
+        android:layout_below="@+id/sizeTxtList"
+        android:layout_alignEnd="@+id/txtQty" />
+</RelativeLayout>
